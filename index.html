@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHM Academy | Connect With Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #dfe9f3, #ffffff);
+      overflow: hidden;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+      animation: float 8s infinite ease-in-out;
+    }
+
+    .bubble:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      background: #7bb7ff;
+      top: 10%;
+      left: 20%;
+      animation-delay: 0s;
+    }
+
+    .bubble:nth-child(2) {
+      width: 60px;
+      height: 60px;
+      background: #a9d1ff;
+      top: 80%;
+      left: 70%;
+      animation-delay: 2s;
+    }
+
+    .bubble:nth-child(3) {
+      width: 120px;
+      height: 120px;
+      background: #bde0fe;
+      top: 50%;
+      left: 80%;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    .card {
+      background: rgb(143, 187, 250);
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+      animation: slideIn 1s ease forwards;
+    }
+
+ .card img.logo {
+  width: 250px; /* You can increase/decrease as needed */
+  margin-bottom: -50px;
+
+    
+}
+
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 20px 0;
+      padding: 10px 20px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      justify-content: start;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .social:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .social i {
+      font-size: 22px;
+      color: #fff;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social p {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .instagram {
+      background: #E1306C;
+    }
+
+    .facebook {
+      background: #3b5998;
+    }
+
+    .youtube {
+      background: #FF0000;
+    }
+
+    .google {
+      background: #4285F4;
+    }
+
+    .caption {
+      margin-top: 30px;
+      font-size: 17px;
+      font-weight: 700;
+      color: #222;
+      background: linear-gradient(to right, #4285F4, #E1306C);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 30px 20px;
+      }
+
+      .social p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+
+  <div class="card">
+    <img src="IMG_0341.PNG" alt="SHM Logo" class="logo" />
+
+    <a href="https://www.instagram.com/shmacademy_lmp?igsh=b3B3MXFqdnJsNHpv&utm_source=qr" class="social instagram" target="_blank">
+      <i class="fab fa-instagram"></i>
+       <p>SHM Academy Lakhimpur</p>
+    </a>
+
+    <a href="https://www.facebook.com/share/1BnrNTzWEc/?mibextid=wwXIfr" class="social facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+      <p>SHM Academy Lakhimpur</p>
+    </a>
+
+    <a href="https://youtube.com/@shmacademy2024?si=En9OS9XcMtHZqBln" class="social youtube" target="_blank">
+      <i class="fab fa-youtube"></i>
+      <p>SHM Academy Lakhimpur</p>
+    </a>
+
+    <a href="https://www.google.com/search?kgmid=/g/11wwt3nv_b&hl=en-IN&q=SHM+Academy+Lakhimpur&shndl=30&shem=lcuae&source=sh/x/loc/osrp/m5/3&kgs=15437089daae95e0" class="social google" target="_blank">
+      <i class="fab fa-google"></i>
+      <p>SHM Academy Lakhimpur</p>
+    </a>
+
+    <p class="caption">Follow us and stay connected with SHM Academy for knowledge, updates, and growth!</p>
+  </div>
+</body>
+</html>
